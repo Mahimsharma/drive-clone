@@ -1,0 +1,2 @@
+class SharedMedium < ApplicationRecord
+end
