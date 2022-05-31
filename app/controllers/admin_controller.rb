@@ -14,4 +14,15 @@ class AdminController < ApplicationController
     Medium.create(name: params[:name], owner_id: params[:owner_id], location: params[:location])
     redirect_to "/admin/panel"
   end
+
+  
+  def upload_file
+    # puts params
+    file = Medium.new
+    file.owner_id = 1
+    file.name = "goback.txt"
+    file.location = params[:file]
+    file.save
+
+  end
 end
