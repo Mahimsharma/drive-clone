@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_31_115304) do
+ActiveRecord::Schema.define(version: 2022_05_31_120158) do
 
   create_table "media", force: :cascade do |t|
     t.string "name"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2022_05_31_115304) do
     t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "password"
+    t.string "password_digest"
   end
 
 end
