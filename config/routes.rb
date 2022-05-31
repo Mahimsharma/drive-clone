@@ -3,11 +3,10 @@ Rails.application.routes.draw do
   get 'login/index'
   get 'login/new'
   post 'login/create'
-  get 'login/show'
+  post 'login/authenticate'
   get 'login/edit'
   patch 'login/update'
   delete 'login/destroy'
-
   get 'admin/panel'
   post 'admin/post_user'
   post 'admin/post_medium'
